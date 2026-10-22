@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" width="1280" height="320" role="img" aria-labelledby="pip-issues-banner-title">
+<title id="pip-issues-banner-title">A report travelling back to its maker, drawn as a feedback loop in pixel icons, the vintage green on the left meeting the psychic indigo on the right at one diagonal seam. On the left is a tester's machine, one of a stack. Its running app shows an alert. At a takeoff point the full story drops into the machine's own inbox, beside calendar, mail, chat, board, ticket and screenshot marks that never leave it. Along the top wire an agent passes the rest through a redacting gate, so only counts, ids, timings and blacked-out bars get through. The report, an issue card in four sections, crosses the seam into a summing junction where expected (+) meets what happened (−), and is filed at the head of a list of issues, most of them closed. The maker looks, fixes on a branch and checks the fix. The fix joins a release, and the release runs back along the bottom wire to the machine, where a pixel cat stands on it.</title>
+<!-- pip-issues banner, "the report is the feedback path". 2026-10-22.
+     One drawing (#art) in <defs>, drawn vintage everywhere, then psychic clipped right of one hard diagonal seam, (720,0) to
+     (586,320), drawn over rather than abutted. The seam crosses exactly two things, both wires: the report wire at y=104 (x~676)
+     and the release wire at y=285 (x~601). No glyph, pip, card or container is cut.
+     Genre: a control-loop block diagram. Summing junction = circle, a sign on each input, the cross being an accepted variant;
+     takeoff point = a dot (here, a pip). Error = expected (+) minus got (-): the issue template's Expected / Got lines.
+     Loop runs clockwise: report path along the top (L to R), maker down the right, release along the ground line (R to L), up into
+     the machine. One accent, traced through one report: the card, its row at the head of the list, its fix pip in the release (ringed).
+     Every colour is a design-system role, and every glyph an 8x8 grid from the house pixel set, carried exactly. Whole pixel
+     scales only: monitor 6x, alert 3x, inbox / book / search / branch / check / download / cat 4x, kept-home marks and agent 2x,
+     clock and check in the list 1x. Nothing is named and nothing is linked. -->
+<style>
+.g{fill:var(--g)}.r{fill:var(--r)}.o{fill:var(--o)}.s{fill:var(--s)}
+.eq{fill:var(--eq)}.ed{fill:var(--ed)}.es{fill:var(--es)}
+.i{fill:var(--i)}.i2{fill:var(--i2)}.i3{fill:var(--i3)}
+.a{fill:var(--a)}.at{fill:var(--a);fill-opacity:var(--ato)}.lv{fill:var(--lv)}
+.cb{fill:var(--cb);fill-opacity:var(--cbo)}.ci{fill:var(--i)}
+.k-eq{stroke:var(--eq)}.k-ed{stroke:var(--ed)}.k-es{stroke:var(--es)}.k-a{stroke:var(--a)}
+.k{stroke-width:2}
+.vintage{--g:#c7d9ab;--r:#d7e4c2;--o:#e3ecd4;--s:#b9cf9a;--eq:#b3c799;--ed:#9fb385;--es:#5d6b4c;--i:#20281d;--i2:#3a4233;--i3:#47503e;--a:#1c545d;--ato:.16;--lv:#325c29;--cb:#ffffff;--cbo:.32}
+.psychic{--g:#251b3d;--r:#33274f;--o:#3c2f5c;--s:#191030;--eq:#3a2e5a;--ed:#4d3f77;--es:#8a78bd;--i:#dfcbff;--i2:#c4b3ea;--i3:#bcb1da;--a:#7de3ff;--ato:.14;--lv:#7cf5c0;--cb:#b98bff;--cbo:.42}
+</style>
+<defs>
+  <clipPath id="psychic-side"><path d="M720 0H1280V320H586Z"/></clipPath>
+  <path id="monitor" d="M0 0h8v1H0zM0 1h1v4H0zM7 1h1v4H7zM0 5h8v1H0zM3 6h2v1H3zM1 7h6v1H1z"/>
+  <path id="alert" d="M3 0h2v2H3zM2 2h4v1H2zM2 3h1v1H2zM5 3h1v1H5zM1 4h2v2H1zM4 4h3v1H4zM5 5h2v1H5zM0 6h8v1H0zM0 7h3v1H0zM4 7h4v1H4z"/>
+  <path id="inbox" d="M2 0h4v3H2zM1 3h6v1H1zM0 4h8v1H0zM0 5h1v2H0zM7 5h1v2H7zM0 7h8v1H0z"/>
+  <path id="calendar" d="M2 0h1v1H2zM5 0h1v1H5zM1 1h6v1H1zM0 2h8v1H0zM0 3h1v4H0zM7 3h1v4H7zM2 4h1v1H2zM5 4h1v1H5zM2 6h1v1H2zM5 6h1v1H5zM0 7h8v1H0z"/>
+  <path id="mail" d="M0 0h8v1H0zM0 1h1v6H0zM7 1h1v6H7zM1 2h1v1H1zM6 2h1v1H6zM2 3h1v1H2zM5 3h1v1H5zM3 4h2v1H3zM0 7h8v1H0z"/>
+  <path id="slack" d="M2 0h1v2H2zM5 0h1v2H5zM0 2h3v1H0zM5 2h3v1H5zM0 5h3v1H0zM5 5h3v1H5zM2 6h1v2H2zM5 6h1v2H5z"/>
+  <path id="monday" d="M0 0h8v1H0zM0 1h1v2H0zM2 1h1v2H2zM4 1h1v2H4zM6 1h2v2H6zM0 3h8v1H0zM0 4h1v2H0zM2 4h1v2H2zM4 4h1v2H4zM6 4h2v2H6zM0 6h8v1H0z"/>
+  <path id="ado" d="M1 0h1v1H1zM6 0h1v1H6zM2 1h1v1H2zM5 1h1v2H5zM3 2h1v1H3zM2 3h1v1H2zM4 3h1v1H4zM3 4h1v1H3zM5 4h1v2H5zM2 5h1v1H2zM1 6h1v1H1zM6 6h1v1H6z"/>
+  <path id="camera" d="M2 0h4v1H2zM1 1h1v1H1zM6 1h1v1H6zM0 2h8v1H0zM0 3h1v4H0zM7 3h1v4H7zM3 4h2v2H3zM0 7h8v1H0z"/>
+  <path id="agent" d="M3 0h1v2H3zM1 2h6v1H1zM0 3h1v4H0zM7 3h1v4H7zM2 4h1v1H2zM5 4h1v1H5zM2 6h4v1H2zM1 7h6v1H1z"/>
+  <path id="clock" d="M2 0h4v1H2zM1 1h1v1H1zM6 1h1v1H6zM0 2h1v4H0zM7 2h1v4H7zM2 2h1v2H2zM5 2h1v2H5zM2 4h4v1H2zM1 6h1v1H1zM6 6h1v1H6zM2 7h4v1H2z"/>
+  <path id="book" d="M1 0h5v1H1zM0 1h2v1H0zM5 1h2v1H5zM0 2h1v4H0zM2 2h3v4H2zM6 2h1v4H6zM0 6h2v1H0zM5 6h2v1H5zM1 7h5v1H1z"/>
+  <path id="search" d="M2 0h4v1H2zM1 1h1v1H1zM6 1h1v1H6zM0 2h1v2H0zM7 2h1v2H7zM1 4h1v1H1zM6 4h1v1H6zM2 5h5v1H2zM5 6h2v1H5zM6 7h2v1H6z"/>
+  <path id="branch" d="M0 0h2v2H0zM6 0h2v2H6zM6 2h1v1H6zM1 2h1v3H1zM5 3h1v1H5zM4 4h1v1H4zM1 5h3v1H1zM0 6h2v2H0z"/>
+  <path id="check" d="M7 1h1v1H7zM6 2h2v1H6zM5 3h2v1H5zM0 4h3v1H0zM4 4h2v1H4zM1 5h4v1H1zM2 6h2v1H2z"/>
+  <path id="download" d="M3 0h2v4H3zM1 4h6v1H1zM2 5h4v1H2zM3 6h2v1H3zM0 7h8v1H0z"/>
+  <path id="cat-body" d="M6 12h20v1H6zM6 13h2v1H6zM13 13h5v1h-5zM23 13h3v1h-3zM5 14h2v2H5zM8 14h1v2H8zM11 14h2v2h-2zM14 14h3v2h-3zM18 14h1v2h-1zM21 14h2v2h-2zM24 14h3v2h-3zM5 16h2v2H5zM11 16h2v2h-2zM14 16h3v2h-3zM21 16h2v2h-2zM24 16h3v2h-3zM5 18h3v1H5zM13 18h5v1h-5zM23 18h4v1h-4zM5 19h22v1H5zM6 20h7v1H6zM14 20h3v1h-3zM18 20h8v1h-8zM6 21h8v1H6zM17 21h9v1h-9zM8 22h16v1H8zM11 24h10v1H11zM10 25h12v1H10zM9 26h2v2H9zM12 26h8v2h-8zM21 26h2v2h-2zM12 28h8v1h-8zM12 29h2v2h-2zM18 29h2v2h-2z"/>
+  <path id="cat-ink" d="M9 3h3v1H9zM20 3h3v1h-3zM8 4h5v1H8zM19 4h5v1h-5zM7 5h7v3H7zM18 5h7v3h-7zM7 8h18v2H7zM6 10h20v2H6zM5 12h1v2H5zM26 12h1v2h-1zM8 13h5v1H8zM18 13h5v1h-5zM4 14h1v6H4zM27 14h1v6h-1zM7 14h1v4H7zM9 14h2v2H9zM13 14h1v4h-1zM17 14h1v4h-1zM19 14h2v2h-2zM23 14h1v4h-1zM8 16h3v2H8zM18 16h3v2h-3zM8 18h5v1H8zM18 18h5v1h-5zM5 20h1v2H5zM26 20h1v2h-1zM13 20h1v1h-1zM17 20h1v1h-1zM14 21h3v1h-3zM6 22h2v1H6zM24 22h2v1h-2zM8 23h16v1H8zM10 24h1v1h-1zM21 24h1v1h-1zM9 25h1v1H9zM22 25h1v1h-1zM8 26h1v2H8zM11 26h1v2h-1zM20 26h1v2h-1zM23 26h1v2h-1zM9 28h3v1H9zM20 28h3v1h-3zM11 29h1v2h-1zM20 29h1v2h-1zM14 29h4v1h-4zM14 30h1v1h-1zM17 30h1v1h-1zM12 31h2v1h-2zM18 31h2v1h-2z"/>
+
+  <g id="art">
+<rect class="g" width="1280" height="320"/>
+
+<!-- THE MACHINE: one of a stack (the testers). The boundary is what the report must leave through. -->
+<rect class="s k k-eq" x="48" y="24" width="288" height="192" rx="10"/>
+<rect class="s k k-eq" x="40" y="32" width="288" height="192" rx="10"/>
+<rect class="r k k-ed" x="32" y="40" width="288" height="192" rx="10"/>
+<rect class="o" x="54" y="92" width="36" height="24" shape-rendering="crispEdges"/>
+
+<!-- THE REDACTING GATE: an agent at the wire, a comb, and only evidence past it -->
+<rect class="s k k-ed" x="192" y="76" width="108" height="56" rx="6"/>
+
+<!-- THE REPORT: an issue card in the template's four sections, selected -->
+<rect class="o" x="368" y="60" width="136" height="88" rx="4"/>
+<rect class="at k k-a" x="368" y="60" width="136" height="88" rx="4"/>
+
+<!-- THE REPO: expected meets got at the junction; the report is filed at the head of the list -->
+<rect class="r k k-ed" x="712" y="40" width="256" height="192" rx="10"/>
+<circle class="o k k-es" cx="760" cy="104" r="16"/>
+<g class="o" shape-rendering="crispEdges">
+  <rect x="816" y="114" width="136" height="12"/><rect x="816" y="130" width="136" height="12"/><rect x="816" y="146" width="136" height="12"/><rect x="816" y="162" width="136" height="12"/>
+  <rect x="816" y="178" width="136" height="12"/><rect x="816" y="194" width="136" height="12"/><rect x="816" y="210" width="136" height="12"/>
+</g>
+<rect class="o" x="816" y="98" width="136" height="12"/>
+<rect class="at k k-a" x="816" y="98" width="136" height="12" rx="2"/>
+
+<!-- THE MAKER: look, fix on a branch, check; the fix joins a release -->
+<rect class="r k k-ed" x="1000" y="40" width="232" height="192" rx="10"/>
+
+<!-- WIRES -->
+<g class="es" shape-rendering="crispEdges">
+  <rect x="98" y="103" width="94" height="2"/>
+  <rect x="127" y="107" width="2" height="53"/>
+  <rect x="300" y="103" width="68" height="2"/>
+  <rect x="504" y="103" width="240" height="2"/>
+  <rect x="759" y="80" width="2" height="8"/>
+  <rect x="776" y="103" width="40" height="2"/>
+  <rect x="952" y="103" width="68" height="2"/>
+  <rect x="1060" y="103" width="32" height="2"/><rect x="1132" y="103" width="32" height="2"/>
+  <rect x="1204" y="103" width="12" height="2"/><rect x="1214" y="103" width="2" height="86"/>
+  <rect x="1058" y="187" width="158" height="2"/>
+  <rect x="1039" y="206" width="2" height="80"/>
+  <rect x="71" y="284" width="970" height="2"/>
+  <rect x="71" y="136" width="2" height="148"/>
+  <rect x="228" y="80" width="2" height="4"/><rect x="228" y="86" width="2" height="4"/><rect x="228" y="92" width="2" height="4"/><rect x="228" y="98" width="2" height="4"/>
+  <rect x="228" y="104" width="2" height="4"/><rect x="228" y="110" width="2" height="4"/><rect x="228" y="116" width="2" height="4"/><rect x="228" y="122" width="2" height="4"/>
+</g>
+
+<!-- GLYPHS -->
+<g class="i" shape-rendering="crispEdges">
+  <use href="#monitor" transform="translate(48 86) scale(6)"/>
+  <use href="#alert" transform="translate(60 92) scale(3)"/>
+  <use href="#inbox" transform="translate(112 164) scale(4)"/>
+  <use href="#agent" transform="translate(202 96) scale(2)"/>
+  <use href="#book" transform="translate(746 46) scale(4)"/>
+  <use href="#search" transform="translate(1024 88) scale(4)"/>
+  <use href="#branch" transform="translate(1096 88) scale(4)"/>
+  <use href="#check" transform="translate(1168 88) scale(4)"/>
+  <use href="#download" transform="translate(1024 172) scale(4)"/>
+</g>
+<!-- what never leaves the machine: outside systems, screenshots, and the instance's own words -->
+<g class="i3" shape-rendering="crispEdges">
+  <use href="#calendar" transform="translate(160 172) scale(2)"/>
+  <use href="#mail" transform="translate(184 172) scale(2)"/>
+  <use href="#slack" transform="translate(208 172) scale(2)"/>
+  <use href="#monday" transform="translate(232 172) scale(2)"/>
+  <use href="#ado" transform="translate(256 172) scale(2)"/>
+  <use href="#camera" transform="translate(280 172) scale(2)"/>
+  <rect x="160" y="200" width="136" height="2"/><rect x="160" y="206" width="104" height="2"/><rect x="160" y="212" width="124" height="2"/>
+</g>
+
+<!-- MARKS: pips, redaction bars, signs -->
+<g shape-rendering="crispEdges">
+  <rect class="i2" x="125" y="101" width="6" height="6"/>
+  <!-- past the gate: timings, counts and ids; text as redaction bars -->
+  <use class="i2" href="#clock" transform="translate(238 82)"/>
+  <g class="i2"><rect x="250" y="84" width="4" height="4"/><rect x="256" y="84" width="4" height="4"/><rect x="262" y="84" width="4" height="4"/><rect x="268" y="84" width="4" height="4"/><rect x="274" y="84" width="4" height="4"/><rect x="238" y="113" width="4" height="4"/><rect x="244" y="113" width="4" height="4"/></g>
+  <g class="i"><rect x="238" y="98" width="26" height="5"/><rect x="268" y="98" width="18" height="5"/></g>
+  <rect class="i3" x="252" y="114" width="34" height="2"/>
+  <!-- the card: title + label; What happened; Version; Evidence; Left out -->
+  <rect class="i2" x="378" y="68" width="72" height="3"/>
+  <rect class="es" x="466" y="67" width="28" height="6"/>
+  <g class="i2"><rect x="378" y="80" width="8" height="2"/><rect x="378" y="86" width="8" height="2"/><rect x="378" y="92" width="8" height="2"/><rect x="378" y="98" width="8" height="2"/></g>
+  <g class="i3"><rect x="390" y="80" width="60" height="2"/><rect x="390" y="86" width="48" height="2"/><rect x="390" y="92" width="54" height="2"/><rect x="390" y="98" width="30" height="2"/></g>
+  <g class="i2"><rect x="378" y="108" width="4" height="4"/><rect x="384" y="108" width="4" height="4"/><rect x="390" y="108" width="4" height="4"/><rect x="396" y="108" width="4" height="4"/><rect x="402" y="108" width="4" height="4"/><rect x="408" y="108" width="4" height="4"/><rect x="414" y="108" width="4" height="4"/></g>
+  <rect class="i3" x="426" y="109" width="28" height="2"/>
+  <use class="i2" href="#clock" transform="translate(378 116)"/>
+  <g class="i2"><rect x="390" y="118" width="4" height="4"/><rect x="396" y="118" width="4" height="4"/><rect x="402" y="118" width="4" height="4"/></g>
+  <rect class="i3" x="410" y="119" width="44" height="2"/>
+  <g class="i"><rect x="378" y="130" width="30" height="6"/><rect x="412" y="130" width="18" height="6"/><rect x="434" y="130" width="26" height="6"/></g>
+  <!-- the junction: a cross inside, + on expected, - on got -->
+  <g class="i2">
+    <rect x="751" y="95" width="2" height="2"/><rect x="753" y="97" width="2" height="2"/><rect x="755" y="99" width="2" height="2"/><rect x="757" y="101" width="2" height="2"/><rect x="759" y="103" width="2" height="2"/><rect x="761" y="105" width="2" height="2"/><rect x="763" y="107" width="2" height="2"/><rect x="765" y="109" width="2" height="2"/><rect x="767" y="111" width="2" height="2"/>
+    <rect x="751" y="111" width="2" height="2"/><rect x="753" y="109" width="2" height="2"/><rect x="755" y="107" width="2" height="2"/><rect x="757" y="105" width="2" height="2"/><rect x="761" y="101" width="2" height="2"/><rect x="763" y="99" width="2" height="2"/><rect x="765" y="97" width="2" height="2"/><rect x="767" y="95" width="2" height="2"/>
+    <rect x="766" y="82" width="6" height="2"/><rect x="768" y="80" width="2" height="6"/>
+    <rect x="742" y="110" width="6" height="2"/>
+  </g>
+  <!-- the list: head row is this report (open); the rest open (pip) or closed (check) -->
+  <rect class="i" x="822" y="102" width="4" height="4"/>
+  <rect class="i2" x="832" y="103" width="64" height="2"/>
+  <rect class="es" x="920" y="101" width="24" height="6"/>
+  <g class="i2">
+    <rect x="822" y="118" width="4" height="4"/><rect x="822" y="166" width="4" height="4"/>
+    <use href="#check" transform="translate(820 132)"/><use href="#check" transform="translate(820 148)"/><use href="#check" transform="translate(820 180)"/><use href="#check" transform="translate(820 196)"/><use href="#check" transform="translate(820 212)"/>
+  </g>
+  <g class="i3"><rect x="834" y="119" width="56" height="2"/><rect x="834" y="135" width="72" height="2"/><rect x="834" y="151" width="48" height="2"/><rect x="834" y="167" width="64" height="2"/><rect x="834" y="183" width="40" height="2"/><rect x="834" y="199" width="68" height="2"/><rect x="834" y="215" width="52" height="2"/></g>
+  <g class="es"><rect x="920" y="117" width="24" height="6"/><rect x="920" y="149" width="24" height="6"/><rect x="920" y="181" width="24" height="6"/><rect x="920" y="213" width="24" height="6"/></g>
+  <!-- the release: fixes gathering on the wire; the newest is this report's -->
+  <g class="i2"><rect x="1068" y="184" width="8" height="8"/><rect x="1080" y="184" width="8" height="8"/><rect x="1092" y="184" width="8" height="8"/><rect x="1104" y="184" width="8" height="8"/><rect x="1116" y="184" width="8" height="8"/><rect x="1128" y="184" width="8" height="8"/><rect x="1140" y="184" width="8" height="8"/><rect x="1152" y="184" width="8" height="8"/></g>
+  <rect class="a" x="1164" y="184" width="8" height="8"/>
+  <rect class="lv" x="1012" y="52" width="6" height="6"/>
+</g>
+<rect class="k k-a" fill="none" x="1161" y="181" width="14" height="14" shape-rendering="crispEdges"/>
+
+<!-- THE CAT, standing on the release wire on the tester's side -->
+<g transform="translate(432 156) scale(4)" shape-rendering="crispEdges">
+  <use href="#cat-body" class="cb"/>
+  <use href="#cat-ink" class="ci"/>
+</g>
+  </g>
+</defs>
+
+<!-- vintage everywhere, then psychic over it right of the seam (drawn over, not abutted, so the seam has no hairline gap) -->
+<g class="vintage"><use href="#art"/></g>
+<g class="psychic" clip-path="url(#psychic-side)"><use href="#art"/></g>
+</svg>
